@@ -10,7 +10,7 @@ int setpoint; int degrees; int degreesL; int degreesR; int power; int error;
 int integral = 0; int deriv; double kP = 0.875; double kD = 0.045; int prevError = 0;
 int breakCount = 0; int timer = 0;
 //Lift PID (Master/Slave, Master = left, slave = right)
-void liftPID(int liftSpeed, int target){
+/*void liftPID(int liftSpeed, int target){
   int liftkP = 0;
   while(1){
     setpoint = analogRead(POT_LIFTL);
@@ -34,7 +34,7 @@ void liftPID(int liftSpeed, int target){
     }
   }
 }
-
+*/
 //Main straight driving PID (Basic PID)
 void drivePID(int sp){
   encoderReset(left); encoderReset(right);
