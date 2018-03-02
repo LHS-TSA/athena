@@ -29,26 +29,26 @@
  */
  void autonomous() {
     encoderReset(left); encoderReset(right);
-
+/*
       // 10pt auton - left
     if(analogRead(POT_AUTON) <= 1900)
     {
 
-      motorSet(LIFT_L1,  70);
-      motorSet(LIFT_L2,  70);
-      motorSet(LIFT_R1, -70);
-      motorSet(LIFT_R2, -70);
+      motorSet(LIFT_LT, -70);
+      motorSet(LIFT_LB,  70);
+      motorSet(LIFT_RT,  70);
+      motorSet(LIFT_RB, -70);
 
       delay(350);
 
-      motorSet(LIFT_L1, 0);
-      motorSet(LIFT_L2, 0);
-      motorSet(LIFT_R1, 0);
-      motorSet(LIFT_R2, 0);
+      motorSet(LIFT_LT, 0);
+      motorSet(LIFT_LB, 0);
+      motorSet(LIFT_RT, 0);
+      motorSet(LIFT_RB, 0);
 
       while(analogRead(POT_MOGO) > 1820){
         motorSet(MOGO_L,  70);
-        motorSet(MOGO_R, - 70);
+        motorSet(MOGO_R, -70);
       }
 
       delay(100);
@@ -68,17 +68,17 @@
       drivePID(-45);
 
 
-      motorSet(LIFT_L1, -70);
-      motorSet(LIFT_L2, -70);
-      motorSet(LIFT_R1,  70);
-      motorSet(LIFT_R2,  70);
+      motorSet(LIFT_LT,  70);
+      motorSet(LIFT_LB, -70);
+      motorSet(LIFT_RT, -70);
+      motorSet(LIFT_RB,  70);
 
       delay(250);
 
-      motorSet(LIFT_L1, 0);
-      motorSet(LIFT_L2, 0);
-      motorSet(LIFT_R1, 0);
-      motorSet(LIFT_R2, 0);
+      motorSet(LIFT_LT, 0);
+      motorSet(LIFT_LB, 0);
+      motorSet(LIFT_RT, 0);
+      motorSet(LIFT_RB, 0);
 
       motorSet(ROLLER_CLAW, -70);
       delay(400);
@@ -95,17 +95,17 @@
 
       drivePID(5);
 
-      motorSet(LIFT_L1,  70);
-      motorSet(LIFT_L2,  70);
-      motorSet(LIFT_R1, -70);
-      motorSet(LIFT_R2, -70);
+      motorSet(LIFT_LT, -70);
+      motorSet(LIFT_LB,  70);
+      motorSet(LIFT_RT,  70);
+      motorSet(LIFT_RB, -70);
 
       delay(350);
 
-      motorSet(LIFT_L1, 0);
-      motorSet(LIFT_L2, 0);
-      motorSet(LIFT_R1, 0);
-      motorSet(LIFT_R2, 0);
+      motorSet(LIFT_LT, 0);
+      motorSet(LIFT_LB, 0);
+      motorSet(LIFT_RT, 0);
+      motorSet(LIFT_RB, 0);
 
 
       while(analogRead(POT_MOGO) > 1825){
@@ -122,21 +122,21 @@
     if(analogRead(POT_AUTON) <= 1900)
     {
 
-      motorSet(LIFT_L1,  70);
-      motorSet(LIFT_L2,  70);
-      motorSet(LIFT_R1, -70);
-      motorSet(LIFT_R2, -70);
+      motorSet(LIFT_LT, -70);
+      motorSet(LIFT_LB,  70);
+      motorSet(LIFT_RT,  70);
+      motorSet(LIFT_RB, -70);
 
       delay(350);
 
-      motorSet(LIFT_L1, 0);
-      motorSet(LIFT_L2, 0);
-      motorSet(LIFT_R1, 0);
-      motorSet(LIFT_R2, 0);
+      motorSet(LIFT_LT, 0);
+      motorSet(LIFT_LB, 0);
+      motorSet(LIFT_RT, 0);
+      motorSet(LIFT_RB, 0);
 
       while(analogRead(POT_MOGO) > 1820){
         motorSet(MOGO_L,  70);
-        motorSet(MOGO_R, - 70);
+        motorSet(MOGO_R, -70);
       }
 
       delay(100);
@@ -156,17 +156,17 @@
       drivePID(-45);
 
 
-      motorSet(LIFT_L1, -70);
-      motorSet(LIFT_L2, -70);
-      motorSet(LIFT_R1,  70);
-      motorSet(LIFT_R2,  70);
+      motorSet(LIFT_LT,  70);
+      motorSet(LIFT_LB, -70);
+      motorSet(LIFT_RT, -70);
+      motorSet(LIFT_RB,  70);
 
       delay(250);
 
-      motorSet(LIFT_L1, 0);
-      motorSet(LIFT_L2, 0);
-      motorSet(LIFT_R1, 0);
-      motorSet(LIFT_R2, 0);
+      motorSet(LIFT_LT, 0);
+      motorSet(LIFT_LB, 0);
+      motorSet(LIFT_RT, 0);
+      motorSet(LIFT_RB, 0);
 
       motorSet(ROLLER_CLAW, -70);
       delay(400);
@@ -183,17 +183,17 @@
 
       drivePID(5);
 
-      motorSet(LIFT_L1,  70);
-      motorSet(LIFT_L2,  70);
-      motorSet(LIFT_R1, -70);
-      motorSet(LIFT_R2, -70);
+      motorSet(LIFT_LT, -70);
+      motorSet(LIFT_LB,  70);
+      motorSet(LIFT_RT,  70);
+      motorSet(LIFT_RB, -70);
 
       delay(350);
 
-      motorSet(LIFT_L1, 0);
-      motorSet(LIFT_L2, 0);
-      motorSet(LIFT_R1, 0);
-      motorSet(LIFT_R2, 0);
+      motorSet(LIFT_LT, 0);
+      motorSet(LIFT_LB, 0);
+      motorSet(LIFT_RT, 0);
+      motorSet(LIFT_RB, 0);
 
 
       while(analogRead(POT_MOGO) > 1825){
@@ -207,21 +207,21 @@
     }
 
     //5pt Auton
-
+*/
     if(analogRead(POT_AUTON) <= 1900)
     {
 
-      motorSet(LIFT_L1,  70);
-      motorSet(LIFT_L2,  70);
-      motorSet(LIFT_R1, -70);
-      motorSet(LIFT_R2, -70);
+      motorSet(LIFT_LT, -70);
+      motorSet(LIFT_LB,  70);
+      motorSet(LIFT_RT,  70);
+      motorSet(LIFT_RB, -70);
 
       delay(350);
 
-      motorSet(LIFT_L1, 0);
-      motorSet(LIFT_L2, 0);
-      motorSet(LIFT_R1, 0);
-      motorSet(LIFT_R2, 0);
+      motorSet(LIFT_LT, 0);
+      motorSet(LIFT_LB, 0);
+      motorSet(LIFT_RT, 0);
+      motorSet(LIFT_RB, 0);
 
       while(analogRead(POT_MOGO) > 1820){
         motorSet(MOGO_L,  70);
@@ -245,17 +245,17 @@
       drivePID(-42);
 
 
-      motorSet(LIFT_L1, -70);
-      motorSet(LIFT_L2, -70);
-      motorSet(LIFT_R1,  70);
-      motorSet(LIFT_R2,  70);
+      motorSet(LIFT_LT,  70);
+      motorSet(LIFT_LB, -70);
+      motorSet(LIFT_RT, -70);
+      motorSet(LIFT_RB,  70);
 
       delay(250);
 
-      motorSet(LIFT_L1, 0);
-      motorSet(LIFT_L2, 0);
-      motorSet(LIFT_R1, 0);
-      motorSet(LIFT_R2, 0);
+      motorSet(LIFT_LT, 0);
+      motorSet(LIFT_LB, 0);
+      motorSet(LIFT_RT, 0);
+      motorSet(LIFT_RB, 0);
 
       motorSet(ROLLER_CLAW, -70);
       delay(400);
@@ -268,17 +268,17 @@
       delay(100);
       drivePID(6);
 
-      motorSet(LIFT_L1,  70);
-      motorSet(LIFT_L2,  70);
-      motorSet(LIFT_R1, -70);
-      motorSet(LIFT_R2, -70);
+      motorSet(LIFT_LT, -70);
+      motorSet(LIFT_LB,  70);
+      motorSet(LIFT_RT,  70);
+      motorSet(LIFT_RB, -70);
 
       delay(350);
 
-      motorSet(LIFT_L1, 0);
-      motorSet(LIFT_L2, 0);
-      motorSet(LIFT_R1, 0);
-      motorSet(LIFT_R2, 0);
+      motorSet(LIFT_LT, 0);
+      motorSet(LIFT_LB, 0);
+      motorSet(LIFT_RT, 0);
+      motorSet(LIFT_RB, 0);
 
 
       while(analogRead(POT_MOGO) > 1825){
@@ -290,29 +290,30 @@
 
       drivePID(-9);
     }
-
+/*
   //Standing Goal Auton
 
   if(analogRead(POT_AUTON) <= 1900)
   {
 
-    motorSet(LIFT_L1,  70);
-    motorSet(LIFT_L2,  70);
-    motorSet(LIFT_R1, -70);
-    motorSet(LIFT_R2, -70);
+    motorSet(LIFT_LT, -70);
+    motorSet(LIFT_LB,  70);
+    motorSet(LIFT_RT,  70);
+    motorSet(LIFT_RB, -70);
 
     delay(500);
 
-    motorSet(LIFT_L1, 0);
-    motorSet(LIFT_L2, 0);
-    motorSet(LIFT_R1, 0);
-    motorSet(LIFT_R2, 0);
+    motorSet(LIFT_LT, 0);
+    motorSet(LIFT_LB, 0);
+    motorSet(LIFT_RT, 0);
+    motorSet(LIFT_RB, 0);
 
     drivePID(12);
 
     motorSet(ROLLER_CLAW, -70);
     delay(400);
     motorSet(ROLLER_CLAW, 0);
-    
+
   }
+  */
 }

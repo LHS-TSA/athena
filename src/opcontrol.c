@@ -26,23 +26,23 @@ void operatorControl() {
 		//Lift
 		if(joystickGetDigital(1, 5, JOY_UP))
 		{
-			motorSet(LIFT_L1, 127);
-			motorSet(LIFT_R1, -127);
-			motorSet(LIFT_L2, 127);
-			motorSet(LIFT_R2, -127);
+			motorSet(LIFT_LT, -127);
+			motorSet(LIFT_LB,  127);
+			motorSet(LIFT_RT,  127);
+			motorSet(LIFT_RB, -127);
 		}
 		else if(joystickGetDigital(1, 5, JOY_DOWN))
 		{
-			motorSet(LIFT_L1, -127);
-			motorSet(LIFT_R1, 127);
-			motorSet(LIFT_L2, -127);
-			motorSet(LIFT_R2, 127);
+			motorSet(LIFT_LT,  127);
+			motorSet(LIFT_LB, -127);
+			motorSet(LIFT_RT, -127);
+			motorSet(LIFT_RB,  127);
 		}
 		else{
-			motorSet(LIFT_L1, 0);
-			motorSet(LIFT_R1, 0);
-			motorSet(LIFT_L2, 0);
-			motorSet(LIFT_R2, 0);
+			motorSet(LIFT_LT, 0);
+			motorSet(LIFT_LB, 0);
+			motorSet(LIFT_RT, 0);
+			motorSet(LIFT_RB, 0);
 		}
 
 		//Mogo

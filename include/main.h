@@ -40,10 +40,10 @@ extern "C" {
 #define MOGO_L 1
 #define MOGO_R 10
 //  Lift Motors
-#define LIFT_L1 3
-#define LIFT_L2 4
-#define LIFT_R1 5
-#define LIFT_R2 6
+#define LIFT_LT 3
+#define LIFT_LB 4
+#define LIFT_RT 5
+#define LIFT_RB 6
 //  Rollers
 #define ROLLER_4BAR 7
 #define ROLLER_CLAW 8
