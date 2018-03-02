@@ -53,10 +53,10 @@ extern "C" {
 #define ENCODER_LBOT 2
 #define ENCODER_RTOP 3
 #define ENCODER_RBOT 4
-#define POT_LIFTL 1
-#define POT_LIFTR 2
-#define POT_MOGO 3
-#define POT_AUTON 4
+#define POT_LIFTL 0
+#define POT_LIFTR 0
+#define POT_MOGO 2
+#define POT_AUTON 3
 Encoder left;
 Encoder right;
 
